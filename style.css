@@ -1,0 +1,27 @@
+#budget-input{
+    background-color: rgb(221, 221, 221);
+    margin: 20px;
+    padding: 20px;
+}
+#expense-input{
+    background-color: rgb(221, 221, 221);
+    margin: 20px;
+    padding: 20px;
+}
+#user-output{
+    background-color: rgb(221, 221, 221);
+    margin: 20px;
+    padding: 20px;
+}
+
+html{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(107, 122, 102);
+}
+#user-list{
+    background-color: rgb(219, 220, 222);
+    margin: 20px;
+    padding: 20px;
+
+}

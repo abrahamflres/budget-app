@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <heading>
+            <h1>BUDGET APP</h1>
+        </heading>
+        <div id="budget-input">
+            <form>
+                <label>Please Enter Your Budget</label>
+                <br><br>
+                <input id='user-budget-input' type='number'>
+                <br><br>
+                <button>Add Budget</button>
+                <button id = 'clear-button'>Clear</button>
+                
+            </form>
+        </div>
+        <br><br>
+
+        <div>
+            <form id="expense-input">
+                <label>Please Enter Your Expense</label>
+                <br><br>
+                <input id="expense-name"> 
+                <!-- change for words -->
+                <br><br>
+                <label>Please Enter Your Expense Amount</label>
+                <br><br>
+                <input id = 'expense-amount' type='number'>
+                <br><br>
+                <button id ='expense-button'>Add Expense</button>
+                <button id = 'clear-expense-button'>Clear</button>
+            </form>
+        </div>
+    </section>
+    <br>
+
+    <section>
+        <div id="user-output" style="width: 100%; text-align: center;">
+
+            <h2 style="display: flex; justify-content: space-between; width: 70%; margin: auto;">
+                <span>BUDGET</span>
+                <span>EXPENSES</span>
+                <span>BALANCE</span>
+            </h2>
+    
+            <div id='balance-calc' style="display: flex; justify-content: space-between; width: 65%; margin: auto;">
+                <p id="budget-display"><span>$</span></p>
+                <p id = 'expenses-display'><span>$</span></p>
+                <p id ='balance-display'><span>$</span></p>
+            </div>
+            <button id="calc-balance">Calculate Balance</button>
+        </div>
+        
+    </section>
+    <br>
+
+    <section>
+        <div id="user-list">
+            <h3 style="display: flex; justify-content: space-between; width: 300px;">
+                <span>Expense Title</span>
+                <span>Expense Amount</span>
+            </h3>
+            <ul style="list-style-type: none; padding: 0; width: 300px;">
+                <li style="display: flex; justify-content: space-between;">
+                    <span>Fix the car</span>
+                    <span>200</span>
+                    <button>x</button>
+                </li>
+                <li style="display: flex; justify-content: space-between;">
+                    <span>Buy groceries</span>
+                    <span>150</span>
+                    <button>x</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
