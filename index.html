@@ -13,6 +13,7 @@
         </heading>
         <div id="budget-input">
             <form>
+                <h2 class="heading">Enter Your Budget:</h2>
                 <label>Please Enter Your Budget</label>
                 <br><br>
                 <input id='user-budget-input' type='number'>
@@ -26,6 +27,7 @@
 
         <div>
             <form id="expense-input">
+                <h2 class="heading">Enter Your Expense/s:</h2>
                 <label>Please Enter Your Expense</label>
                 <br><br>
                 <input id="expense-name"> 
@@ -43,7 +45,7 @@
     <br>
 
     <section>
-        <div id="user-output" style="width: 100%; text-align: center;">
+        <div id="user-output" style="width: 94.3%; text-align: center;">
 
             <h2 style="display: flex; justify-content: space-between; width: 70%; margin: auto;">
                 <span>BUDGET</span>
@@ -64,21 +66,13 @@
 
     <section>
         <div id="user-list">
-            <h3 style="display: flex; justify-content: space-between; width: 300px;">
-                <span>Expense Title</span>
-                <span>Expense Amount</span>
-            </h3>
-            <ul style="list-style-type: none; padding: 0; width: 300px;">
-                <li style="display: flex; justify-content: space-between;">
-                    <span>Fix the car</span>
-                    <span>200</span>
-                    <button>x</button>
-                </li>
-                <li style="display: flex; justify-content: space-between;">
-                    <span>Buy groceries</span>
-                    <span>150</span>
-                    <button>x</button>
-                </li>
+            <h2 class='expense-header'>
+                <span>Your Expenses</span>
+
+            </h2>
+            <ul id='expense-list'>
+                <!-- <li></li> -->
+   
             </ul>
         </div>
     </section>

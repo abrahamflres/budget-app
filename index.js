@@ -11,8 +11,20 @@ const clearExpenseBtn = document.getElementById('clear-expense-button')
 
 const addExpenseBtn = document.getElementById('expense-button')
 const expenseAmount = document.getElementById('expense-amount')
+const expenseName = document.getElementById('expense-name')
+
 
 const calcBalanceBtn = document.getElementById('calc-balance')
+
+const expenseList = document.getElementById('expense-list')
+
+
+function appendExpense(expenseNameEntry, expenseEntry){
+    
+        let li = document.createElement('li')
+        li.innerHTML = `${expenseEntry}, $${expenseNameEntry}`
+        expenseList.appendChild(li)
+}
 
 
 calcBalanceBtn.addEventListener('click', (event)=>{
@@ -27,16 +39,14 @@ calcBalanceBtn.addEventListener('click', (event)=>{
 })
 
 function displayBalance(balance){
+    if(balance>=0){
+        balanceDisplay.style.color = 'green'
+    }else{
+        balanceDisplay.style.color='red'
+    }
+
     balanceDisplay.textContent = balance
-
 }
-
-
-
-
-
-
-
 
 let budget =0
 budgetFormEl.addEventListener('click', (event)=>{
@@ -63,8 +73,13 @@ let expenses = 0
 addExpenseBtn.addEventListener('click', (event)=>{
     event.preventDefault()
     let expenseEntry = Number(expenseAmount.value)
+    let expenseNameEntry = expenseName.value
+
     expenses = expenses + expenseEntry
     displayExpenses(expenses)
+
+    appendExpense(expenseEntry, expenseNameEntry)
+
     
 })
 
